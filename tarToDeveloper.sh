@@ -5,4 +5,3 @@ if [ -f "Developer.gzip" ]; then
 	cd ../../ 
 	rm -rf Users
 fi
-
