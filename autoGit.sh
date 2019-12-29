@@ -23,6 +23,7 @@ for d in ~/Developer/* ; do
 			done
 		else
 			if  git rev-parse --is-inside-work-tree &> /dev/null; then
+				git add -A
 				if git diff-index --quiet HEAD --; then
 					echo "-Nothing to commit $d\n"
 				else
