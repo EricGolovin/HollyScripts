@@ -45,10 +45,14 @@ echo "Copied autoGit.sh to ~/Developer"
 cd ~/OneDrive
 if [ -f "Developer.gzip" ]; then
 	rm Developer.gzip
-	tar -czf Developer.gzip ~/Developer/ &
+	cd ..
+	tar -czf Developer.gzip ./Developer &
+	mv Developer.gzip OneDrive/
 	echo "Updated Developer.gzip"
 else 	
-	tar -czf Developer.gzip ~/Developer/ &
+	cd ..
+        tar -czf Developer.gzip ./Developer &
+        mv Developer.gzip OneDrive/
 	echo "Created Developer.gzip"
 fi
 
