@@ -39,7 +39,7 @@ for d in ~/Developer/* ; do
 done
 
 cd
-cp autoGit.sh ~/Developer
+cp .autoGit.sh ~/Developer
 echo "Copied autoGit.sh to ~/Developer"
 
 cd ~/OneDrive
@@ -56,7 +56,7 @@ else
 	echo "Created Developer.gzip"
 fi
 
-rm ~/Developer/autoGit.sh
+rm ~/Developer/.autoGit.sh
 echo "Deleted ~/Developer/autoGit.sh"
 
 cd $CDIR
