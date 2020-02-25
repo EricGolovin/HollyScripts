@@ -37,26 +37,24 @@ for d in ~/Developer/* ; do
         echo " "
     fi
 done
+#cp .autoGit.sh ~/Developer
+#echo "Copied autoGit.sh to ~/Developer"
 
-cd
-cp .autoGit.sh ~/Developer
-echo "Copied autoGit.sh to ~/Developer"
+#cd ~/OneDrive
+#if [ -f "Developer.gzip" ]; then
+#    rm Developer.gzip
+#    cd
+#    tar -czf Developer.gzip ./Developer
+#    mv Developer.gzip ~/OneDrive
+#    echo "Updated Developer.gzip"
+#else
+#    cd ..
+#        tar -czf Developer.gzip ./Developer
+#        mv Developer.gzip ~/OneDrive/
+#    echo "Created Developer.gzip"
+#fi
 
-cd ~/OneDrive
-if [ -f "Developer.gzip" ]; then
-    rm Developer.gzip
-    cd
-    tar -czf Developer.gzip ./Developer
-    mv Developer.gzip ~/OneDrive/
-    echo "Updated Developer.gzip"
-else
-    cd ..
-        tar -czf Developer.gzip ./Developer
-        mv Developer.gzip ~/OneDrive/
-    echo "Created Developer.gzip"
-fi
-
-rm ~/Developer/.autoGit.sh
-echo "Deleted ~/Developer/autoGit.sh"
+#rm ~/Developer/.autoGit.sh
+#echo "Deleted ~/Developer/autoGit.sh"
 
 cd $CDIR
